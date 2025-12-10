@@ -3,4 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def students(req):
-    return HttpResponse('<h1>soft84ya</h1>')
+    students = [
+        {'id':1 , 'name':'Abhishek','age':25}
+    ]
+    return HttpResponse(students)
